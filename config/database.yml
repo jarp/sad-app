@@ -3,7 +3,11 @@
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem "sqlite3"
+
+# For postgres the adapter is "postgresql"
+#   gem install pg
 #
+
 default: &default
   adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>

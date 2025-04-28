@@ -2,7 +2,6 @@ require "application_system_test_case"
 
 class DepartmentsTest < ApplicationSystemTestCase
   setup do
-    puts "**********"
     @department = departments(:itao)
   end
 

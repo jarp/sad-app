@@ -2,7 +2,7 @@ require "application_system_test_case"
 
 class EmployeesTest < ApplicationSystemTestCase
   setup do
-    @employee = employees(:one)
+    @employee = employees(:jonathan)
   end
 
   test "visiting the index" do
@@ -15,7 +15,7 @@ class EmployeesTest < ApplicationSystemTestCase
     click_on "New employee"
 
     fill_in "Birthdate", with: @employee.birthdate
-    fill_in "Department", with: @employee.department_id
+    select @employee.department.name, from: "Department"
     fill_in "First name", with: @employee.first_name
     check "Is active" if @employee.is_active
     check "Is manager" if @employee.is_manager
@@ -31,7 +31,7 @@ class EmployeesTest < ApplicationSystemTestCase
     click_on "Edit this employee", match: :first
 
     fill_in "Birthdate", with: @employee.birthdate
-    fill_in "Department", with: @employee.department_id
+    select @employee.department.name, from: "Department"
     fill_in "First name", with: @employee.first_name
     check "Is active" if @employee.is_active
     check "Is manager" if @employee.is_manager

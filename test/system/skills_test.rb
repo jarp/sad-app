@@ -2,7 +2,7 @@ require "application_system_test_case"
 
 class SkillsTest < ApplicationSystemTestCase
   setup do
-    @skill = skills(:one)
+    @skill = skills(:counting)
   end
 
   test "visiting the index" do

@@ -1,17 +1,33 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  first_name: MyString
-  last_name: MyString
-  birthdate: 2025-04-14
-  is_active: false
-  is_manager: false
-  department: one
+jonathan:
+  first_name: Jonathan
+  last_name: Arp
+  birthdate: DateTime.now - 46.years
+  is_active: true
+  is_manager: true
+  department: opac
 
-two:
-  first_name: MyString
-  last_name: MyString
-  birthdate: 2025-04-14
+erik:
+  first_name: Erik
+  last_name: Runyon
+  birthdate: DateTime.now - 44.years
+  is_active: true
+  is_manager: false
+  department: opac
+
+anna:
+  first_name: Anna
+  last_name: Lytics
+  birthdate: DateTime.now - 32.years
+  is_active: true
+  is_manager: false
+  department: itao
+
+stacy:
+  first_name: Stacy
+  last_name: Tistics
+  birthdate: DateTime.now - 20.years
   is_active: false
   is_manager: false
-  department: two
+  department: oit

@@ -1,9 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  description: MyText
+itao:
+  name: ITAO
+  description: The second best department ever with the second best people ever
 
-two:
-  name: MyString
-  description: MyText
+opac:
+  name: Office of Public Affairs
+  description: The best department ever with the best people ever
+
+oit: 
+  name: Office of Information Technology
+  description: The worst department ever with the worst people ever

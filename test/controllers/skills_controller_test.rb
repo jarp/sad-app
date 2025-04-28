@@ -2,7 +2,7 @@ require "test_helper"
 
 class SkillsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @skill = skills(:one)
+    @skill = skills(:counting)
   end
 
   test "should get index" do

@@ -6,7 +6,7 @@ class CreateEmployees < ActiveRecord::Migration[7.2]
       t.date :birthdate
       t.boolean :is_active, default: true
       t.boolean :is_manager, default: false
-      t.references :department, null: false, foreign_key: true
+      t.references :department, null: true, foreign_key: true
 
       t.timestamps
     end

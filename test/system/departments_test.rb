@@ -2,7 +2,8 @@ require "application_system_test_case"
 
 class DepartmentsTest < ApplicationSystemTestCase
   setup do
-    @department = departments(:one)
+    puts "**********"
+    @department = departments(:itao)
   end
 
   test "visiting the index" do

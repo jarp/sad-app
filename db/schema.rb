@@ -27,7 +27,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_04_14_142635) do
     t.date "birthdate"
     t.boolean "is_active", default: true
     t.boolean "is_manager", default: false
-    t.bigint "department_id", null: false
+    t.bigint "department_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["department_id"], name: "index_employees_on_department_id"

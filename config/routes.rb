@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get "home/index"
+  get "/" => "home#index", as: :home
   get "home/create_session"
   resources :employees
   resources :skills

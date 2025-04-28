@@ -1,5 +1,6 @@
 class EmployeesController < ApplicationController
   before_action :set_employee, only: %i[ show edit update destroy ]
+  before_action :set_departments, only: %i[ new create edit update ]
 
   # GET /employees or /employees.json
   def index
@@ -62,6 +63,10 @@ class EmployeesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_employee
       @employee = Employee.find(params[:id])
+    end
+
+    def set_departments
+      @departments = Department.all
     end
 
     # Only allow a list of trusted parameters through.

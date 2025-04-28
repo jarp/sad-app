@@ -1,32 +1,21 @@
 <div id="<%= dom_id employee %>">
-  <p>
-    <strong>First name:</strong>
-    <%= employee.first_name %>
-  </p>
+  <h2><%= employee.first_name %> <%= employee.last_name %></h2>
 
   <p>
-    <strong>Last name:</strong>
-    <%= employee.last_name %>
+    <strong>
+    <%= employee.department.name %>
+    </strong>
   </p>
 
   <p>
     <strong>Birthdate:</strong>
-    <%= employee.birthdate %>
+    <%= employee.birthdate&.strftime('%D') %>
   </p>
 
   <p>
-    <strong>Is active:</strong>
-    <%= employee.is_active %>
-  </p>
-
-  <p>
-    <strong>Is manager:</strong>
+    <strong>Active:</strong>
+    <%= employee.is_active %> 
+    <strong>Manager:</strong>
     <%= employee.is_manager %>
   </p>
-
-  <p>
-    <strong>Department:</strong>
-    <%= employee.department_id %>
-  </p>
-
 </div>
